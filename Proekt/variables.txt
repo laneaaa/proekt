@@ -1,0 +1,30 @@
+# Это писал я
+## Variables
+
+***rounds*** = w (счёт победы) + l        k - килы, d - смерти, a - помощи
+
+`* - умножить`, `/ - разделить`
+
+* kd = kill / death else d < 1, d = 1   
+* diff = k - d
+* dpr = d / rounds else d < 1, d = 1
+* kpr = k / rounds
+* apr = a / rounds (no print) - это для импакта, на письмо не выводим, просто как переменную
+* impact = (2.13*kpr) + (0,42*apr) - 0,63
+* rating = (0.39*KPR) + (-0.54*DPR) + (0.23*Impact) + (0.00034*(93*k))
+
+## Example
+
+``
+xZise total round - 30, k - 30, a - 11, d - 14
+``
+```
+-0,2538 0,3818
+kd = 2,14
+diff = 16
+kpr = 1
+dpr = 0,47
+apr = 0,37
+impact = 1,66
+rating = 1,44
+```
